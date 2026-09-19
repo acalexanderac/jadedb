@@ -2,6 +2,11 @@
 
 Educational LSM-tree storage engine in Rust (portfolio / interview project).
 
+**Aprende el motor de punta a punta:** [docs/LSM_GUIDE.md](docs/LSM_GUIDE.md)  
+(terminología, write/read path, tombstones, flush, crash recovery, manifest, compaction, snapshots, mapa a código, checklist de entrevista).
+
+Grafo interactivo del código: [graphify-out/graph.html](graphify-out/graph.html)
+
 ## Design point
 
 Jade optimizes for **correct durability + explainable trade-offs**, not raw RocksDB parity.
@@ -73,9 +78,13 @@ src/
   compact.rs    # leveled compaction
   iter.rs       # merge iterator
   snapshot.rs   # MVCC snapshots
+docs/
+  LSM_GUIDE.md  # full study guide (terminology → interview checklist)
 ```
 
 ## Reading
 
+- **[Jade LSM Guide](docs/LSM_GUIDE.md)** (start here)
 - [Mini-LSM](https://skyzh.github.io/mini-lsm/)
 - [LevelDB impl.md](https://github.com/google/leveldb/blob/main/doc/impl.md)
+- [graphify report](graphify-out/GRAPH_REPORT.md)
