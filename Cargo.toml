@@ -1,0 +1,28 @@
+[package]
+name = "jadedb"
+version = "0.1.0"
+edition = "2021"
+description = "Educational LSM-tree storage engine in Rust"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+tempfile = "3.14"
+crc32fast = "1.4"
+parking_lot = "0.12"
+thiserror = "2.0"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "write_path"
+harness = false
+
+[lib]
+name = "jadedb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "jade"
+path = "src/bin/jade.rs"
