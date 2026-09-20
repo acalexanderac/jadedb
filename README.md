@@ -3,7 +3,7 @@
 Educational LSM-tree storage engine in Rust (portfolio / interview project).
 
 **Aprende el motor de punta a punta:** [docs/LSM_GUIDE.md](docs/LSM_GUIDE.md)  
-(terminología, write/read path, tombstones, flush, crash recovery, manifest, compaction, snapshots, mapa a código, checklist de entrevista).
+(terminología, SST, bloom a fondo, write/read path, crash recovery, compaction, Valkey vs SST bloom, plan de práctica y próximos proyectos).
 
 Grafo interactivo del código: [graphify-out/graph.html](graphify-out/graph.html)
 
